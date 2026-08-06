@@ -1,0 +1,23 @@
+[project]
+name = "demystifying-statistical-paradoxes-using-causal-inference"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Avinash", email = "avinash.yadav@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=3.0.5",
+    "polars>=1.43.2",
+    "pyarrow>=25.0.0",
+    "statsmodels>=0.14.6",
+]
+
+[project.scripts]
+demystifying-statistical-paradoxes-using-causal-inference = "demystifying_statistical_paradoxes_using_causal_inference:main"
+simpsons_paradox = "demystifying_statistical_paradoxes_using_causal_inference.simpsons_paradox:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
